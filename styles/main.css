@@ -65,7 +65,7 @@ body {
 }
 
 /* HEADER FOR TABLET*/
-@media all and (min-width:768px)  {
+@media all and (min-width:767px)  {
     .header  {
         z-index: 1;
         height: 60px;
@@ -119,7 +119,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.claim-hero{
+.claim-hero {
     position: relative;
 }
 
@@ -180,7 +180,6 @@ aside {
     top: 15px;
 }
 
-
 .adalabers-color {
     color: #099d8d;
 }
@@ -196,17 +195,15 @@ aside {
 .rrss {
     display: inline-block;
     color: #099d8d;
-    
 }
 
-.space-point{
+.space-point {
     padding: 0 5px 0;
 }
 
 .adalabers {
     width: 90%;
     margin: auto;
-
 }
 
 .rrss-block{
@@ -216,25 +213,23 @@ aside {
     padding-bottom: 45px;
 }
 
-
 .member-image{
     width: 180px;
     height: 180px;
     border-radius: 4px;
     border: solid 5px lightgray;
     margin: auto;
-
 }
 
 .photo-member{
     width: 100%;
     display: block;
-
 }
 
+/* MAIN FOR TABLET */
 @media all and (min-width:767px) {
     .team {
-        padding-top: 30px;
+        padding-top: 15px;
     }
     .wrapper-section {
         width: 90%;
