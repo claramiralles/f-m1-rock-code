@@ -191,7 +191,6 @@ aside {
     padding-top: 15px;
 }
 
-
 .rrss {
     display: inline-block;
     color: #099d8d;
@@ -206,14 +205,14 @@ aside {
     margin: auto;
 }
 
-.rrss-block{
+.rrss-block {
     display: flex;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 45px;
 }
 
-.member-image{
+.member-image {
     width: 180px;
     height: 180px;
     border-radius: 4px;
@@ -221,7 +220,7 @@ aside {
     margin: auto;
 }
 
-.photo-member{
+.photo-member {
     width: 100%;
     display: block;
 }
@@ -244,7 +243,6 @@ aside {
         left: 8%;
         bottom: 0;
     }
-    
     .strengths-weaknesses {
         display: flex;
         justify-content: space-between;
@@ -253,6 +251,43 @@ aside {
     }
     .strengths, .weaknesses {
         max-width: 45%;
+    }
+
+    /* ADALABERS PART FOR TABLET */
+    .member {
+        display: flex;
+    }
+    .member-content {
+        width: 70%;
+    }
+    .photo-member {
+        max-height: 205px;
+    }
+    .member .member-content p {
+        text-align: start;
+    }
+    .member .member-name {
+        text-align: start;
+    }
+    .member .rrss-block {
+        justify-content: start;
+    }
+    .member-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .member-reverse .member-content p {
+        text-align: end;
+    }
+    .member-reverse .member-name {
+        text-align: end;
+    }
+    .member-reverse .rrss-block {
+        justify-content: flex-end;
+    }
+    .main-column {
+        max-width: 678px;
+        margin: auto;
     }
 }
 
