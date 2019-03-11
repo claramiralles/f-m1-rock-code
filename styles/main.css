@@ -89,6 +89,9 @@ body {
 
 /* HEADER FOR DESKTOP */
 @media all and (min-width:1200px)  {
+    .headerflex {
+        justify-content: space-between;
+    }
     .teambox {
         margin-left: 140px;
     }
@@ -317,7 +320,7 @@ aside {
         max-width: 601px;
     }
     .strengths-weaknesses {
-        max-width: 1000px;
+        max-width: 1100px;
     }
     .strengths, .weaknesses {
         max-width: 45%;
