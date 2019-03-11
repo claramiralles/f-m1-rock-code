@@ -257,8 +257,12 @@ aside {
     .member {
         display: flex;
     }
+    .member-image {
+        width: 205px;
+        height: 205px;
+    }
     .member-content {
-        width: 70%;
+        width: 60%;
     }
     .photo-member {
         max-height: 205px;
@@ -330,4 +334,55 @@ aside {
 
 .adalablogo {
     width: 100%;
+}
+
+/* FOOTER FOR TABLET*/
+@media all and (min-width:767px)  {
+    .footer {
+        align-content: space-between;
+        flex-wrap: wrap;
+        height: 170px;
+        flex-basis: 100%;
+        margin-top: 24px;
+        margin-bottom: 56px;        
+    }
+    
+    .copyrightbox {
+       width: 399px;
+    }
+    
+    .copyright {
+        order: 1;
+        font-size: 15px;
+        height: 20px;
+        margin-top: 30px;
+        margin-left: 45px;
+        padding-top: 6px;
+    }
+    
+    .menufooter {
+        order: 3;
+        width: 324px;
+        height: 90px;
+        margin-right: 45px;
+        text-align: right;
+        line-height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;    
+    }
+
+    .footerlink {
+        padding: 4px;
+    }
+    
+    .logobox {
+        order: 2;
+        margin-top: 15px;
+        padding-bottom: 4px;
+        margin-right: 210px;
+    }
+
+    .adalablogo {
+        justify-content: flex-start;
+    }
 }
