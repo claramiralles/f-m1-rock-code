@@ -112,28 +112,33 @@ body {
     margin: auto;
 }
 
-.img-hero {
+/* .img-hero {
     width: 100%;
     display: block;
+} */
+
+.claim-hero {
+    width: 100%;
+    height: 421px;
+    background-image: url(../images/team-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .claim {
+    min-width: 85%;
     background-color: white;
     font-size: 18px;
     color: black;
-    line-height: 25px;
+    line-height: 1.39;
     font-weight: 600;
     padding: 14px 15px 16px;
-    margin: auto;
-    margin-block-start: 0;
-    margin-block-end: 0;
     position: absolute;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.claim-hero {
-    position: relative;
+    transform: translate(-50%, 50%);
 }
 
 .title {
