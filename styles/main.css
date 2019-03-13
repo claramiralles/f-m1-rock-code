@@ -327,6 +327,49 @@ aside {
     }
 }
 
+    /* ADALABERS PART FOR DESKTOP */
+
+    @media all and (min-width:1200px) {
+
+
+        .main-column {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .member-image {
+            width: 278px;
+            height: 278px;
+        }
+        
+        .member-content {
+            padding-bottom: 10px;
+        }
+
+        .member .member-content {
+            flex-grow: 1;
+            padding-left: 45px;
+        }
+
+        .member-reverse .member-content {
+            flex-grow: 1;
+            padding-right: 45px;
+        }
+
+        .member .member-content p {
+            padding-right: 15vw;
+        }
+
+        .member-reverse .member-content p {
+            padding-left: 15vw;
+        }
+        
+        .photo-member {
+            max-height: 278px;
+            max-width: 278px;
+    }
+}
+
+
 
 /* FOOTER */
 .footer {
