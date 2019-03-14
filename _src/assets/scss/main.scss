@@ -1,5 +1,9 @@
 // Core
 @import 'core/variables';
+@import 'core/mixings';
+
+//Layout
+@import 'layout/team';
 
 * {
     margin: 0;
@@ -106,14 +110,7 @@ body {
 
 
 /* MAIN */
-.team {
-    padding-top: 30px;
-}
 
-.wrapper-section {
-    width: 90%;
-    margin: auto;
-}
 
 .claim-hero {
     width: 100%;
@@ -139,62 +136,14 @@ body {
     transform: translate(-50%, 50%);
 }
 
-.title {
-    font-family: 'Rubik', sans-serif;
-    font-size: 24px;
-    line-height: 1.88;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
 
-.team-color {
-    color:#14d9c4;
-}
 
-.about-us p {
-    margin-bottom: 20px;
-}
-
-.about-us p:last-child {
-    margin-bottom: 30px;
-}
-
-.subtitle {
-    font-family: 'Rubik', sans-serif;
-    font-size: 22px;
-    line-height: 2.05;
-    text-align: center;
-    color: #099d8d; 
-    font-weight: 500;   
-}
-
-p {
-    text-align: center;
-    color: #54585a;
-    line-height: 1.5;
-}
 
 aside {
     background-color: rgba(184, 184, 185, .2);
     padding: 30px 0 15px;
 }
 
-.strengths-weaknesses p {
-    margin-bottom: 30px;
-}
-
-.triangle {
-    height: 30px;
-    width: 30px;
-    margin: auto;
-    transform: rotate(45deg);
-    background-color:white;
-    position: relative;
-    top: 15px;
-}
 
 .adalabers-color {
     color: #099d8d;
