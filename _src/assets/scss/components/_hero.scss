@@ -6,6 +6,9 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    @media (min-width:320px) and (orientation: landscape) {
+        height: 210px;
+    }
     @media all and (min-width:1200px) {
         height: 550px;
     }
@@ -36,6 +39,3 @@
         }
     }   
 }
-
-
-
