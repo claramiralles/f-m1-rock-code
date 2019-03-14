@@ -1,6 +1,9 @@
 // Core
 @import 'core/variables';
 
+// Components
+@import 'components/hero';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +12,8 @@
 }
 
 body {
-    font-family: $fontFamily;
-    font-size: $fontSize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -25,7 +28,7 @@ body {
 }
 
 .teamname {
-    font-family: $secondaryFont;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500; 
     font-size: 16px;  
     color:white;
@@ -48,7 +51,7 @@ body {
 .menu {
     list-style: none;
     text-transform: uppercase; 
-    font-family: $secondaryFont;
+    font-family: 'Rubik', sans-serif;
     color:white;
     font-size: 15px;
     display: flex;
@@ -115,29 +118,7 @@ body {
     margin: auto;
 }
 
-.claim-hero {
-    width: 100%;
-    height: 421px;
-    background-image: url(../images/team-2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
 
-.claim {
-    min-width: 85%;
-    background-color: white;
-    font-size: 18px;
-    color: black;
-    line-height: 1.39;
-    font-weight: 600;
-    padding: 14px 15px 16px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
 
 .title {
     font-family: 'Rubik', sans-serif;
@@ -251,12 +232,7 @@ aside {
         max-width: 678px;
         margin: auto;
     }
-    .claim {
-        min-width: 441px;
-        background-color: rgba(255, 255, 255, .8);
-        transform: translate(0, 0);
-        left: 8%;
-    }
+    
     .strengths-weaknesses {
         display: flex;
         justify-content: space-between;
@@ -312,16 +288,6 @@ aside {
 
 /* MAIN FOR DESKTOP */
 @media all and (min-width:1200px) {
-    .claim-hero {
-        height: 550px;
-    }
-    .claim {
-        min-width: 574px;
-        left: 10%;
-        font-size: 24px;
-        line-height: 1.25;
-        padding: 15px 30px;
-    }
     .wrapper-section {
         max-width: 601px;
     }
