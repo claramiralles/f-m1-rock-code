@@ -1,45 +1,41 @@
 .claim-hero {
-    width: 100%;
+    width: $completeWidth;
     height: 421px;
-    background-image: url(../images/team-2.png);
+    background-image: url($pathImages + 'team-2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
-
-.claim {
-    min-width: 85%;
-    background-color: white;
-    font-size: 18px;
-    color: black;
-    line-height: 1.39;
-    font-weight: 600;
-    padding: 14px 15px 16px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-@media all and (min-width:767px) {
-    .claim {
-        min-width: 441px;
-        background-color: rgba(255, 255, 255, .8);
-        transform: translate(0, 0);
-        left: 8%;
-    }
-}
-
-@media all and (min-width:1200px) {
-    .claim-hero {
+    @media all and (min-width:1200px) {
         height: 550px;
     }
     .claim {
-        min-width: 574px;
-        left: 10%;
-        font-size: 24px;
-        line-height: 1.25;
-        padding: 15px 30px;
-    }
+        min-width: 85%;
+        background-color: white;
+        font-size: rem(18px);
+        color: black;
+        line-height: 1.39;
+        font-weight: 600;
+        padding: rem(14px) rem(15px) rem(16px);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        @media all and (min-width:767px) {
+            min-width: 441px;
+            background-color: rgba(255, 255, 255, .8);
+            transform: translate(0, 0);
+            left: 8%;
+        }
+        @media all and (min-width:1200px) {
+            min-width: 574px;
+            left: 10%;
+            font-size: rem(24px);
+            line-height: 1.25;
+            padding: rem(15px) rem(30px);
+        }
+    }   
 }
+
+
+
