@@ -1,0 +1,89 @@
+
+/* HEADER */
+.teambox {
+    display: flex;
+    height: 60px;    
+    background-color: #099D8D;
+    justify-content: center;
+    align-items: center;
+    opacity:0.95;
+}
+
+.teamname {
+    font-family: $secondaryFont;
+    font-weight: 500; 
+    font-size: 16px;  
+    color:white;
+    display:flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;    
+}
+    
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105px;
+}   
+
+.menu {
+    list-style: none;
+    text-transform: uppercase; 
+    font-family: $secondaryFont;
+    color:white;
+    font-size: 15px;
+    display: flex;
+    height: 45px;
+    background-color: #14d9c4;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+    opacity:0.95;
+}
+
+.menulink {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HEADER FOR TABLET*/
+@media all and (min-width:767px)  {
+    .header  {
+        z-index: 1;
+        height: 60px;
+        background-color: #099D8D
+    }    
+        
+    .headerflex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }    
+    
+    .menu {
+        background-color: #099D8D;
+    }
+    
+    .menulink {
+        margin-right: 20px;
+    }
+}
+
+/* HEADER FOR DESKTOP */
+@media all and (min-width:1200px)  {
+    .headerflex {
+        justify-content: space-between;
+    }
+    .teambox {
+        margin-left: 140px;
+    }
+    .menu {
+        justify-content: space-around;
+        margin-right: 140px;
+    }
+}
