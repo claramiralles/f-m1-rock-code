@@ -22,6 +22,7 @@
 }
     
 .header{
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,17 +59,17 @@
         height: 60px;
         background-color: #099D8D
     }    
-        
     .headerflex {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        max-width: 767px;
+        margin: auto;
     }    
-    
     .menu {
         background-color: #099D8D;
+        margin: auto;
     }
-    
     .menulink {
         margin-right: 20px;
     }
@@ -76,14 +77,18 @@
 
 /* HEADER FOR DESKTOP */
 @media all and (min-width:1200px)  {
+    
+    .header  {
+        justify-content: center;
+    }
     .headerflex {
         justify-content: space-between;
+        max-width: 1000px;
+        margin: auto;
     }
     .teambox {
-        margin-left: 140px;
     }
     .menu {
         justify-content: space-around;
-        margin-right: 140px;
     }
 }
