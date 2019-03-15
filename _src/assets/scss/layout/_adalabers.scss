@@ -1,5 +1,5 @@
 .adalabers-color {
-    color: #099d8d;
+    color: $greenButterfly;
 }
 
 .member-name {
@@ -11,7 +11,7 @@
 
 .rrss {
     display: inline-block;
-    color: #099d8d;
+    color: $greenButterfly;
 }
 
 .space-point {
@@ -36,6 +36,15 @@
     border-radius: 4px;
     border: solid 5px lightgray;
     margin: auto;
+    @media all and (min-width:767px) {
+        width: 205px;
+        height: 205px;
+        }
+    @media all and (min-width:1200px) {
+        width: 278px;
+        height: 278px;
+        }
+    }
 }
 
 .photo-member {
@@ -45,46 +54,80 @@
 
 /* ADALABERS PART FOR TABLET */
 
-@media all and (min-width:767px) {
-
         .member {
-            display: flex;
+            @media all and (min-width:767px) {
+                display: flex;
+            }
+
         }
-        .member-image {
-            width: 205px;
-            height: 205px;
-        }
+    
         .member-content {
+            @media all and (min-width:767px) {
             width: 60%;
+            }
         }
         .photo-member {
-            max-height: 205px;
+            @media all and (min-width:767px) {
+                max-height: 205px;
+            }
         }
-        .member .member-content p {
-            text-align: start;
+        .member {
+            .member-content {
+                p {
+                    @media all and (min-width:767px) {
+                    text-align: start;
+                    } 
+            }
         }
-        .member .member-name {
-            text-align: start;
+        .member {
+            .member-name {
+                @media all and (min-width:767px) {
+                    text-align: start;
+                }
+             }       
         }
-        .member .rrss-block {
-            justify-content: start;
+
+        .member {
+            .rrss-block {
+                @media all and (min-width:767px) {
+                justify-content: start;
+                }
+            }
         }
         .member-reverse {
-            display: flex;
-            flex-direction: row-reverse;
+            @media all and (min-width:767px) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
         }
-        .member-reverse .member-content p {
-            text-align: end;
+        .member-reverse {
+            .member-content {
+                p {
+                    @media all and (min-width:767px) {
+                        text-align: end;
+                    }
+                 } 
+            }
         }
-        .member-reverse .member-name {
-            text-align: end;
+        .member-reverse {
+            .member-name {
+                @media all and (min-width:767px) {
+                    text-align: end;
+                }
+            }
         }
-        .member-reverse .rrss-block {
-            justify-content: flex-end;
+        .member-reverse {
+            .rrss-block {
+                @media all and (min-width:767px) {
+                    justify-content: flex-end;
+                }
+            }
         }
         .main-column {
-            max-width: 678px;
-            margin: auto;
+            @media all and (min-width:767px) {
+                max-width: $centerColumnTablet;
+                margin: auto;
+            }
         }
 
 }
@@ -98,36 +141,45 @@
         max-width: 1000px;
         margin: auto;
     }
-    .member-image {
-        width: 278px;
-        height: 278px;
-    }
+
     
     .member-content {
         padding-bottom: 10px;
     }
 
-    .member .member-content {
-        flex-grow: 1;
-        padding-left: 45px;
+    .member {
+        .member-content {
+            flex-grow: 1;
+            padding-left: 45px;
+        }
     }
 
-    .member-reverse .member-content {
-        flex-grow: 1;
-        padding-right: 45px;
+    .member-reverse {
+        .member-content {
+            flex-grow: 1;
+            padding-right: 45px;
+        }
     }
 
-    .member .member-content p {
-        padding-right: 15vw;
+    .member {
+        .member-content {
+            p {
+                padding-right: 15vw;
+            }
+        }
     }
 
-    .member-reverse .member-content p {
-        padding-left: 15vw;
+    .member-reverse {
+        .member-content {
+            p {
+                padding-left: 15vw;
+            }
+        }
     }
     
     .photo-member {
         max-height: 278px;
         max-width: 278px;
 }
-}
+
 
