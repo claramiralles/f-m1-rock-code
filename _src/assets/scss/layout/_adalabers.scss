@@ -1,0 +1,133 @@
+.adalabers-color {
+    color: #099d8d;
+}
+
+.member-name {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.25;
+    padding-top: 15px;
+}
+
+.rrss {
+    display: inline-block;
+    color: #099d8d;
+}
+
+.space-point {
+    padding: 0 5px 0;
+}
+
+.adalabers {
+    width: 90%;
+    margin: auto;
+}
+
+.rrss-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.member-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    border: solid 5px lightgray;
+    margin: auto;
+}
+
+.photo-member {
+    width: 100%;
+    display: block;
+}
+
+/* ADALABERS PART FOR TABLET */
+
+@media all and (min-width:767px) {
+
+        .member {
+            display: flex;
+        }
+        .member-image {
+            width: 205px;
+            height: 205px;
+        }
+        .member-content {
+            width: 60%;
+        }
+        .photo-member {
+            max-height: 205px;
+        }
+        .member .member-content p {
+            text-align: start;
+        }
+        .member .member-name {
+            text-align: start;
+        }
+        .member .rrss-block {
+            justify-content: start;
+        }
+        .member-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .member-reverse .member-content p {
+            text-align: end;
+        }
+        .member-reverse .member-name {
+            text-align: end;
+        }
+        .member-reverse .rrss-block {
+            justify-content: flex-end;
+        }
+        .main-column {
+            max-width: 678px;
+            margin: auto;
+        }
+
+}
+
+/* ADALABERS PART FOR DESKTOP */
+
+@media all and (min-width:1200px) {
+
+
+    .main-column {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .member-image {
+        width: 278px;
+        height: 278px;
+    }
+    
+    .member-content {
+        padding-bottom: 10px;
+    }
+
+    .member .member-content {
+        flex-grow: 1;
+        padding-left: 45px;
+    }
+
+    .member-reverse .member-content {
+        flex-grow: 1;
+        padding-right: 45px;
+    }
+
+    .member .member-content p {
+        padding-right: 15vw;
+    }
+
+    .member-reverse .member-content p {
+        padding-left: 15vw;
+    }
+    
+    .photo-member {
+        max-height: 278px;
+        max-width: 278px;
+}
+}
+
