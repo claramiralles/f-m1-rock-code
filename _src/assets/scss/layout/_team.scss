@@ -1,0 +1,94 @@
+// MOBILE
+
+aside {
+    background-color: rgba(184, 184, 185, .2);
+    padding: 30px 0 15px;
+}
+
+.team {
+    padding-top: 30px;
+}
+
+.team-color {
+    color:$greenButterfly;
+}
+
+.wrapper-section {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    line-height: 1.88;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    line-height: 2.05;
+    text-align: center;
+    color:$greenButterfly; 
+    font-weight: 500;   
+}
+
+.about-us p {
+    margin-bottom: 20px;
+}
+
+.about-us p:last-child {
+    margin-bottom: 30px;
+}
+
+.strengths-weaknesses p {
+    margin-bottom: 30px;
+}
+
+.triangle {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    transform: rotate(45deg);
+    background-color:white;
+    position: relative;
+    top: 15px;
+}
+
+// TABLET
+@media all and (min-width:767px) {
+    .team {
+        padding-top: 15px;
+    }
+    .wrapper-section {
+        width: 90%;
+        max-width: 678px;
+        margin: auto;
+    }
+    .strengths-weaknesses {
+        display: flex;
+        justify-content: space-between;
+        max-width: $centerColumnTablet;
+        margin: auto;
+    }
+    .strengths, .weaknesses {
+        max-width: 45%;
+    }
+}
+
+// DESKTOP
+@media all and (min-width:1200px) { 
+    .wrapper-section {
+        max-width: 601px;
+    }
+    .strengths-weaknesses {
+        max-width: $centerColumnDesktop;
+    }
+    .strengths, .weaknesses {
+        max-width: 45%;
+    }
+}
