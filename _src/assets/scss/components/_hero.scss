@@ -6,6 +6,9 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    &.img-contact {
+        background-image: url($pathImages + 'contact.jpg');
+    } 
     @media (min-width:320px) and (orientation: landscape) {
         height: 210px;
     }
@@ -24,6 +27,9 @@
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
+        &.hidden {
+            display: none;
+        }
         @media all and (min-width:767px) {
             min-width: 441px;
             background-color: rgba(255, 255, 255, .8);
@@ -37,5 +43,5 @@
             line-height: 1.25;
             padding: rem(15px) rem(30px);
         }
-    }   
+    }
 }
