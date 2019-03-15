@@ -1,3 +1,10 @@
+// MOBILE
+
+aside {
+    background-color: rgba(184, 184, 185, .2);
+    padding: 30px 0 15px;
+}
+
 .team {
     padding-top: 30px;
 }
@@ -50,4 +57,38 @@
     background-color:white;
     position: relative;
     top: 15px;
+}
+
+// TABLET
+@media all and (min-width:767px) {
+    .team {
+        padding-top: 15px;
+    }
+    .wrapper-section {
+        width: 90%;
+        max-width: 678px;
+        margin: auto;
+    }
+    .strengths-weaknesses {
+        display: flex;
+        justify-content: space-between;
+        max-width: $centerColumnTablet;
+        margin: auto;
+    }
+    .strengths, .weaknesses {
+        max-width: 45%;
+    }
+}
+
+// DESKTOP
+@media all and (min-width:1200px) { 
+    .wrapper-section {
+        max-width: 601px;
+    }
+    .strengths-weaknesses {
+        max-width: 1$centerColumnDesktop;
+    }
+    .strengths, .weaknesses {
+        max-width: 45%;
+    }
 }
