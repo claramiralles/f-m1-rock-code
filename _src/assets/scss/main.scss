@@ -23,8 +23,8 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-
 /* HEADER */
+/*
 .teambox {
     display: flex;
     height: 60px;    
@@ -33,7 +33,6 @@ body {
     align-items: center;
     opacity:0.95;
 }
-
 .teamname {
     font-family: 'Rubik', sans-serif;
     font-weight: 500; 
@@ -44,8 +43,7 @@ body {
     align-content: center;
     justify-content: center;
     text-transform: uppercase;    
-}
-    
+}   
 .header{
     position: fixed;
     top: 0;
@@ -54,7 +52,6 @@ body {
     z-index: 1;
     height: 105px;
 }   
-
 .menu {
     list-style: none;
     text-transform: uppercase; 
@@ -69,38 +66,32 @@ body {
     align-items: center;
     opacity:0.95;
 }
-
 .menulink {
     color: white;
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
 }
-
-/* HEADER FOR TABLET*/
+/* HEADER FOR TABLET
 @media all and (min-width:767px)  {
     .header  {
         z-index: 1;
         height: 60px;
         background-color: #099D8D;
-    }    
-        
+    }           
     .headerflex {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }    
-    
+    }     
     .menu {
         background-color: #099D8D;
     }
-    
     .menulink {
         margin-right: 20px;
     }
 }
-
-/* HEADER FOR DESKTOP */
+/* HEADER FOR DESKTOP 
 @media all and (min-width:1200px)  {
     .headerflex {
         justify-content: space-between;
@@ -113,7 +104,7 @@ body {
         margin-right: 140px;
     }
 }
-
+*/
 
 /* MAIN */
 

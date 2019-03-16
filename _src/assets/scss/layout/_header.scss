@@ -1,92 +1,67 @@
-
 /* HEADER */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: $completeWidth;
+    height: 105px;
+    opacity:0.95;
+    background-color: $greenButterfly;
+    font-family: $secondaryFont;
+    color:white;
+    font-weight: 500;
+    text-transform: uppercase;
+        @media all and (min-width:767px)  {
+        height: 60px;
+        }   
+}
+.headerflex {
+        @media all and (min-width:767px)  {
+        max-width: $centerColumnTablet;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        } 
+        @media all and (min-width:1200px)  {
+        max-width: $centerColumnDesktop;
+        }
+}
 .teambox {
     display: flex;
     height: 60px;    
-    background-color: #099D8D;
     justify-content: center;
     align-items: center;
-    opacity:0.95;
 }
-
 .teamname {
-    font-family: $secondaryFont;
-    font-weight: 500; 
     font-size: 16px;  
-    color:white;
     display:flex;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    text-transform: uppercase;    
-}
-    
-.header{
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 105px;
+    text-align: center;   
 }   
-
 .menu {
     list-style: none;
-    text-transform: uppercase; 
-    font-family: $secondaryFont;
-    color:white;
+    text-transform: uppercase;
     font-size: 15px;
     display: flex;
     height: 45px;
     background-color: #14d9c4;
-    font-weight: 500;
     justify-content: space-around;
     align-items: center;
-    opacity:0.95;
+        @media all and (min-width:767px)  {
+        background-color: $greenButterfly;
+        margin: auto;
+        }
+        @media all and (min-width:1200px)  {
+        justify-content: space-around;
+        }
 }
-
 .menulink {
-    color: white;
+    color: inherit;
+    font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-    font-weight: 500;
-}
-
-/* HEADER FOR TABLET*/
-@media all and (min-width:767px)  {
-    .header  {
-        z-index: 1;
-        height: 60px;
-        background-color: #099D8D
-    }    
-    .headerflex {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        max-width: 900px;
-        margin: auto;
-    }    
-    .menu {
-        background-color: #099D8D;
-        margin: auto;
-    }
-    .menulink {
-        margin-left: 20px;
-    }
-}
-
-/* HEADER FOR DESKTOP */
-@media all and (min-width:1200px)  {
-    
-    .header  {
-        justify-content: center;
-    }
-    .headerflex {
-        justify-content: space-between;
-        max-width: 1275px;
-        margin: auto;
- }
-    .menu {
-        justify-content: space-around;
-    }
+        @media all and (min-width:767px)  {
+        margin: 0 10px 0 10px;
+        }
 }
