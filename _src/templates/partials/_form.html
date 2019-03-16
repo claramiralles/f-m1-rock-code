@@ -1,3 +1,27 @@
-<form>
-    
+<form class="form" action="/" method="POST">
+    <div class="form__item">
+        <label class="form__label" for="completeName">Nombre completo <span class="form__label--asterisk">*</span>
+            <input class="form__input" id="completeName" name="completeName" type="text" placeholder="Nombre..." required>
+        </label>
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="email">Email <span class="form__label--asterisk">*</span>
+            <input class="form__input" id="email" name="email" type="email" value="nombre.apellidos@mail.com" required>
+        </label>
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="telephone">Teléfono
+            <input class="form__input" id="telephone" name="telephone" type="tel" placeholder="Ej. 690000000">
+        </label>
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="message">Mensaje <span class="form__label--asterisk">*</span>
+            <textarea class="form__input" id="message" name="message" cols="30" rows="10" placeholder="¿Qué necesita?"></textarea>
+        </label>
+    </div>
+
+    <button class="form__button" type="submit">Enviar</button>
 </form>

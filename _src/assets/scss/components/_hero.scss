@@ -8,6 +8,10 @@
     position: relative;
     &.img-contact {
         background-image: url($pathImages + 'contact.jpg');
+        height: 300px;
+        @media all and (min-width:1200px) {
+            height: 400px;
+        }    
     } 
     @media (min-width:320px) and (orientation: landscape) {
         height: 210px;
