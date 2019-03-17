@@ -1,27 +1,117 @@
-.footer {
 
-}
+    .footer {
 
-.copyrightbox {
+        border-top: 1px solid #b8b8b9;
 
-}
+            @media all and (min-width:768px) {
+            box-sizing: border-box;
+            width: 100vw;
+            border-top: 1px solid #b8b8b9;
+            display: flex;
+    }
+.container {
+    display: flex;
+    flex-direction: column;  
+     
 
-.copyright {
+    @media all and (min-width:768px) {
 
-}
-
-.menufooter {
-
-}
-
-.footerlink {
-
-}
-
-.logobox {
-
-}
-
-.adalablogo {
+        margin: auto;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: nowrap;
     
+    }
+}
+
+
+.copyright__container{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #b8b8b9;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+    @media all and (min-width:768px) {
+
+        height: 45px;
+        width: 50%;
+        background-color: #fff;
+        transform: translateY(30px);
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+}
+.copyright {
+    color: #b8b8b9
+} 
+
+
+}
+
+.image__container{
+ text-align: center;
+
+    @media all and (min-width:768px) {
+        transform: translateY(-60px);
+        display: flex;
+        align-items: center;
+    }
+
+    .image {
+        width: 22vw;
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+}
+
+.menu__footer {
+    display: block;
+    text-align: center;
+
+    @media all and (min-width:768px) {
+        height: 90px;
+        width: 50%;
+        align-self: flex-end;
+        transform: translatey(-15px);
+        }
+}
+
+.list__container {
+    list-style: none;
+    padding: 0;
+    line-height: 1.4em ;
+
+    @media all and (min-width:768px) {
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        line-height: 1.4em ;
+}
+}
+
+.list__item { 
+    text-align: center;
+    color: $rockGrey;
+    opacity: 0.65;
+    line-height: 20px;
+    text-transform: uppercase; 
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 75%;
+
+        @media all and (min-width:768px) {
+        text-decoration: none;
+        }
+    }
 }
