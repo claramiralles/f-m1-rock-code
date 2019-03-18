@@ -17,28 +17,29 @@
         }   
 }
 .headerflex {
-        @media all and (min-width:767px)  {
+    @media all and (min-width:767px)  {
         max-width: $centerColumnTablet;
         margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        } 
-        @media all and (min-width:1200px)  {
+    } 
+    @media all and (min-width:1200px)  {
         max-width: $centerColumnDesktop;
-        }
+    }
 }
 .teambox {
     display: flex;
     height: 60px;    
     justify-content: center;
     align-items: center;
+    .teamname {
+        font-size: 16px;  
+        display:flex;
+        text-align: center;   
+    }
 }
-.teamname {
-    font-size: 16px;  
-    display:flex;
-    text-align: center;   
-}   
+   
 .menu {
     list-style: none;
     text-transform: uppercase;
@@ -48,17 +49,17 @@
     background-color: #14d9c4;
     justify-content: space-around;
     align-items: center;
-        @media all and (min-width:767px)  {
+    @media all and (min-width:767px)  {
         background-color: $greenButterfly;
         margin: auto;
-        }
+    }
 }
 .menulink {
     color: inherit;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-        @media all and (min-width:767px)  {
+    @media all and (min-width:767px)  {
         margin: 0 10px 0 10px;
-        }
+    }
 }
