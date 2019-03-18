@@ -7,6 +7,9 @@ aside {
 
 .team {
     padding-top: 30px;
+    @media all and (min-width:767px) {
+            padding-top: 15px;
+        }
 }
 
 .team-color {
@@ -16,6 +19,14 @@ aside {
 .wrapper-section {
     width: 90%;
     margin: auto;
+    @media all and (min-width:767px) {
+            width: 90%;
+            max-width: 678px;
+            margin: auto;
+        }
+    @media all and (min-width:1200px) { 
+            max-width: 601px;
+        }
 }
 
 .title {
@@ -39,6 +50,9 @@ aside {
 
 .about-us p {
     margin-bottom: 20px;
+    p {
+
+    }
 }
 
 .about-us p:last-child {
@@ -47,6 +61,15 @@ aside {
 
 .strengths-weaknesses p {
     margin-bottom: 30px;
+    @media all and (min-width:767px) {
+            display: flex;
+            justify-content: space-between;
+            max-width: $centerColumnTablet;
+            margin: auto;
+        }
+    @media all and (min-width:1200px) { 
+            max-width: $centerColumnDesktop;
+            }
 }
 
 .triangle {
@@ -61,20 +84,6 @@ aside {
 
 // TABLET
 @media all and (min-width:767px) {
-    .team {
-        padding-top: 15px;
-    }
-    .wrapper-section {
-        width: 90%;
-        max-width: 678px;
-        margin: auto;
-    }
-    .strengths-weaknesses {
-        display: flex;
-        justify-content: space-between;
-        max-width: $centerColumnTablet;
-        margin: auto;
-    }
     .strengths, .weaknesses {
         max-width: 45%;
     }
@@ -82,12 +91,6 @@ aside {
 
 // DESKTOP
 @media all and (min-width:1200px) { 
-    .wrapper-section {
-        max-width: 601px;
-    }
-    .strengths-weaknesses {
-        max-width: $centerColumnDesktop;
-    }
     .strengths, .weaknesses {
         max-width: 45%;
     }
