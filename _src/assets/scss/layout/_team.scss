@@ -48,18 +48,18 @@ aside {
     font-weight: 500;   
 }
 
-.about-us p {
-    margin-bottom: 20px;
-    p {
-
-    }
+.content-text {
+         margin-bottom: 20px;
+         text-align: center;
+         color: $rockGrey;
+         line-height: $lineHeightGeneral;
+         &:last-child{
+            margin-bottom: 30px;
+        }
 }
 
-.about-us p:last-child {
-    margin-bottom: 30px;
-}
 
-.strengths-weaknesses p {
+.strengths-weaknesses .content-text {
     margin-bottom: 30px;
     @media all and (min-width:767px) {
             display: flex;
@@ -82,16 +82,8 @@ aside {
     top: 15px;
 }
 
-// TABLET
-@media all and (min-width:767px) {
-    .strengths, .weaknesses {
-        max-width: 45%;
-    }
-}
-
-// DESKTOP
-@media all and (min-width:1200px) { 
-    .strengths, .weaknesses {
+.strengths, .weaknesses {
+    @media all and (min-width:767px) {
         max-width: 45%;
     }
 }
