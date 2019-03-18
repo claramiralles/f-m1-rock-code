@@ -1,3 +1,8 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    
+}
 .form {
     background-color: grey;
     width: 320px;
@@ -7,12 +12,10 @@
 }
 
 .form__item {
-    background-color: red;
     padding-bottom: 10px;
 }
 
 .form__label {
-    background-color: yellow;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #54585a;
@@ -34,24 +37,25 @@
     height: 45px;
     background-color: white;
     border: 1px solid #b8b8b9;
+    padding: 15px;
   
    
     &.form__text {
         height: 90px;
     }
 
-    .button {
-        width: 290px;
-        height: 45px;
-        border-radius: 4px;
-        background-color: #099d8d;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        cursor: pointer;
-        
-           
-          }
 }
+
+.button {
+    width: 290px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #099d8d;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px 0px 60px 0px;
+}
+
 
