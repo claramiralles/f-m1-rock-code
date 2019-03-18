@@ -8,7 +8,13 @@
     line-height: 2.25;
     padding-top: 15px;
 }
-
+.member {
+    .member-name {
+        @media all and (min-width:767px) {
+            text-align: start;
+        }
+     }       
+}
 .rrss {
     display: inline-block;
     color: $greenButterfly;
@@ -29,7 +35,13 @@
     padding-top: 15px;
     padding-bottom: 45px;
 }
-
+.member {
+    .rrss-block {
+        @media all and (min-width:767px) {
+        justify-content: start;
+        }
+    }
+}
 .member-image {
     width: 180px;
     height: 180px;
@@ -48,79 +60,59 @@
 .photo-member {
     width: 100%;
     display: block;
+    @media all and (min-width:767px) {
+        max-height: 205px;
+    }
 }
-
-/* ADALABERS PART FOR TABLET */
-
-        .member {
+.member {
+    @media all and (min-width:767px) {
+        display: flex;
+    }
+}
+.member-content {
+    @media all and (min-width:767px) {
+    width: 60%;
+    }
+}
+.member {
+    .member-content {
+        p {
             @media all and (min-width:767px) {
-                display: flex;
+            text-align: start;
+            } 
+    }
+}
+.member-reverse {
+    @media all and (min-width:767px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+// NO FUNCIONA EL SIGUIENTE CODIGO
+.member-reverse {
+    .member-content {
+        p {
+            @media all and (min-width:767px) {
+                text-align: end;
             }
+         } 
+    }
+}
+.member-reverse {
+    .rrss-block {
+        @media all and (min-width:767px) {
+            justify-content: flex-end;
+        }
+    }
+}
+.member-reverse {
+    .member-name {
+        @media all and (min-width:767px) {
+            text-align: end;
+        }
+    }
+        }
 
-        }
-    
-        .member-content {
-            @media all and (min-width:767px) {
-            width: 60%;
-            }
-        }
-        .photo-member {
-            @media all and (min-width:767px) {
-                max-height: 205px;
-            }
-        }
-        .member {
-            .member-content {
-                p {
-                    @media all and (min-width:767px) {
-                    text-align: start;
-                    } 
-            }
-        }
-        .member {
-            .member-name {
-                @media all and (min-width:767px) {
-                    text-align: start;
-                }
-             }       
-        }
-
-        .member {
-            .rrss-block {
-                @media all and (min-width:767px) {
-                justify-content: start;
-                }
-            }
-        }
-        .member-reverse {
-            @media all and (min-width:767px) {
-                display: flex;
-                flex-direction: row-reverse;
-            }
-        }
-        .member-reverse {
-            .member-content {
-                p {
-                    @media all and (min-width:767px) {
-                        text-align: end;
-                    }
-                 } 
-            }
-        }
-        .member-reverse {
-            .member-name {
-                @media all and (min-width:767px) {
-                    text-align: end;
-                }
-            }
-        }
-        .member-reverse {
-            .rrss-block {
-                @media all and (min-width:767px) {
-                    justify-content: flex-end;
-                }
-            }
-        }
         .main-column {
             @media all and (min-width:767px) {
                 max-width: $centerColumnTablet;
