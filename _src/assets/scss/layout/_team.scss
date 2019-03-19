@@ -1,21 +1,24 @@
-// MOBILE
-
+#team{
+    position: absolute;
+    top: -80px;
+    @media all and (min-width: 767px){
+        top: -50px;
+    }
+}
 aside {
     background-color: rgba(184, 184, 185, .2);
     padding: 30px 0 15px;
 }
-
 .team {
+    position: relative;
     padding-top: 30px;
     @media all and (min-width:767px) {
             padding-top: 15px;
         }
 }
-
 .team-color {
     color:$greenButterfly;
 }
-
 .wrapper-section {
     width: 90%;
     margin: auto;
@@ -23,12 +26,8 @@ aside {
             width: 90%;
             max-width: $centerColumnTablet;
             margin: auto;
-        }
-    @media all and (min-width:1200px) { 
-            max-width: 601px;
-        }
+        }  
 }
-
 .title {
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
@@ -47,7 +46,6 @@ aside {
     color:$greenButterfly; 
     font-weight: 500;   
 }
-
 .content-text {
          margin-bottom: 20px;
          text-align: center;
@@ -57,9 +55,7 @@ aside {
             margin-bottom: 30px;
         }
 }
-
-
-.strengths-weaknesses .content-text {
+.strengths-weaknesses {
     margin-bottom: 30px;
     @media all and (min-width:767px) {
             display: flex;
@@ -71,7 +67,6 @@ aside {
             max-width: $centerColumnDesktop;
             }
 }
-
 .triangle {
     height: 30px;
     width: 30px;
@@ -81,9 +76,11 @@ aside {
     position: relative;
     top: 15px;
 }
-
 .strengths, .weaknesses {
     @media all and (min-width:767px) {
-        max-width: 45%;
+        max-width: 43%;
+    }
+    @media all and (min-width:1200px) {
+        max-width: 43%;
     }
 }
