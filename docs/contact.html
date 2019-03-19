@@ -40,42 +40,50 @@
         <!-- MAIN -->
         <main>
             <div class="claim-hero img-contact"></div>
-            <div class="wrapper">
-                <form class="form" action="/" method="POST">
-                    <div class="form__item">
-                        <label class="form__label" for="completeName">Nombre completo <span class="form__label--asterisk">*</span>
+            <section id="contact" class="contact">
+                 <h2 class="title">Get in touch</h2>
 
-                            <input class="form__input"
-                            id="completeName" name="completeName" type="text" placeholder="Nombre..."
-                            required>
-                        </label>
-                    </div>
-                    <div class="form__item form__item--email">
-                        <label class="form__label" for="email">Email <span class="form__label--asterisk">*</span>
+                <div class="content-contact">
+                    <p class="content-text">Let's talk about your project?</p>
+                    <p class="content-text">Please fill out the quick form and we will be in touch with lightning
+                        speed.</p>
+                </div>
+                <div class="wrapper">
+                    <form class="form" action="/" method="POST">
+                        <div class="form__item">
+                            <label class="form__label" for="completeName">Nombre completo <span class="form__label--asterisk">*</span>
 
-                            <input class="form__input form__input--email"
-                            id="email" name="email" type="email" value="nombre.apellidos@mail.com"
-                            required>
-                        </label>
-                    </div>
-                    <div class="form__item form__item--telephone">
-                        <label class="form__label" for="telephone">Teléfono
-                            <input class="form__input form__input--telephone" id="telephone"
-                            name="telephone" type="tel" placeholder="Ej. 690000000">
-                        </label>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__label" for="message">Mensaje <span class="form__label--asterisk">*</span>
+                                <input class="form__input"
+                                id="completeName" name="completeName" type="text" placeholder="Nombre..."
+                                required>
+                            </label>
+                        </div>
+                        <div class="form__item form__item--email">
+                            <label class="form__label" for="email">Email <span class="form__label--asterisk">*</span>
 
-                            <textarea class="form__input form__text"
-                            id="message" name="message" cols="30" rows="10" placeholder="¿Qué necesita?"></textarea>
-                        </label>
-                    </div>
-                    <div class="button__container">
-                        <input class="button" type="submit" value="Enviar">
-                    </div>
-                </form>
-            </div>
+                                <input class="form__input form__input--email"
+                                id="email" name="email" type="email" value="nombre.apellidos@mail.com"
+                                required>
+                            </label>
+                        </div>
+                        <div class="form__item form__item--telephone">
+                            <label class="form__label" for="telephone">Teléfono
+                                <input class="form__input form__input--telephone" id="telephone"
+                                name="telephone" type="tel" placeholder="Ej. 690000000">
+                            </label>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="message">Mensaje <span class="form__label--asterisk">*</span>
+
+                                <textarea class="form__input form__text"
+                                id="message" name="message" cols="30" rows="10" placeholder="¿Qué necesita?"></textarea>
+                            </label>
+                        </div>
+                        <div class="button__container">
+                            <input class="button" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
         </main>
         <!-- FOOTER -->
         <footer class="footer">
