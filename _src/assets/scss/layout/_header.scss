@@ -59,6 +59,10 @@
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
+    transition: color ease 0.7s;
+    &:hover{
+        color: rgb(71, 71, 71);
+    }
     @media all and (min-width:767px)  {
         margin: 0 10px 0 10px;
     }
