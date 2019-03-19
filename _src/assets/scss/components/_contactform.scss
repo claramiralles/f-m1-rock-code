@@ -79,6 +79,10 @@
     text-decoration: none;
     cursor: pointer;
     margin: 20px 0px 60px 0px;
+    transition: background-color ease 0.8s;
+    &:hover{
+        background-color: #14d9c4;
+    }
     @media all and (min-width:768px)
     {
         width: 206px;
