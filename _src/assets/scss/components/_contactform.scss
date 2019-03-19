@@ -1,50 +1,66 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    
 }
 .form {
     background-color: grey;
     background-color: white;
     padding: 15px;
 }
-
 .form__item {
     padding-bottom: 10px;
 }
-
 .form__label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fontFamily;
     font-size: 14px;
     color: #54585a;
 }
-
 .form__label--asterisk {
     color:  #14d9c4;
 }
-
 .form__input {
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fontFamily;
     font-size: 14px;
-    color:  #b8b8b9;
+    color:  $greyCloud;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     width: 290px;
     height: 45px;
     background-color: white;
-    border: 1px solid #b8b8b9;
+    border: 1px solid $greyCloud;
     padding: 15px;
-  
-   
     &.form__text {
         height: 90px;
     }
-    @media all and (min-width:768px)
-    {
+    @media all and (min-width:768px) {
         width: 442px;
     }
+    @media all and (min-width:1200px) {
+        width: 601px;
+    }
+}
+.form__input--email {
+    @media all and (min-width:1200px){
+        width: 395px;
+}
+}
+.form__input--telephone {
+    @media all and (min-width:1200px){
+        width: 162px;
+}
+}
+.form__item--telephone {
+    @media all and (min-width:1200px){
+        display: inline-block;
+        margin-left: 40px;
+}
+}
+.form__item--email {
+    @media all and (min-width:1200px){
+        display: inline-block;
+}
 }
 .button__container{
     display: flex;
@@ -54,7 +70,7 @@
     width: 290px;
     height: 45px;
     border-radius: 4px;
-    background-color: #099d8d;
+    background-color: $greenButterfly;
     border: none;
     color: white;
     text-transform: uppercase;
@@ -67,7 +83,7 @@
     {
         width: 206px;
     }
-    @media all and (min-width:768px)
+    @media all and (min-width:1200px)
     {
         width: 278px;
     }
