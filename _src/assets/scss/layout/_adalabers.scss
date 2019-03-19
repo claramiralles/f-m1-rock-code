@@ -25,6 +25,11 @@
     padding-top: 15px;
     padding-bottom: 45px;
 }
+p {
+    text-align: center;
+    color: $rockGrey;
+    line-height: $lineHeightGeneral;
+}
 .member-content {
     @media all and (min-width:767px) {
     width: 60%;
