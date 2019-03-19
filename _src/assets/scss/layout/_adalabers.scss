@@ -1,0 +1,148 @@
+.adalabers {
+    width: 90%;
+    margin: auto;
+}
+.adalabers-color {
+    color: $greenButterfly;
+}
+
+.member-name {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.25;
+    padding-top: 15px;
+}
+.rrss {
+    display: inline-block;
+    color: $greenButterfly;
+}
+.space-point {
+    padding: 0 5px 0;
+}
+.rrss-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+.text {
+    text-align: center;
+    color: $rockGrey;
+    line-height: $lineHeightGeneral;
+}
+.member-content {
+    @media all and (min-width:767px) {
+    width: 60%;
+    }
+    @media all and (min-width:1200px) {
+            margin-bottom: 20px;
+        }
+}
+.member {
+    .member-name {
+        @media all and (min-width:767px) {
+            text-align: left;
+        }
+    }
+    .member-content {
+        @media all and (min-width:1200px) {
+            flex-grow: 1;
+            padding-left: 45px;
+        }
+    }       
+}
+.member-reverse {
+    .member-name {
+        @media all and (min-width:767px) {
+            text-align: right;
+        }
+    }
+    @media all and (min-width:1200px) {
+        .member-content {
+            flex-grow: 1;
+            padding-right: 45px;
+        }
+    }
+
+}
+.member {
+    .rrss-block {
+        @media all and (min-width:767px) {
+        justify-content: flex-start;
+        }
+    }
+}
+.member-reverse {
+    .rrss-block {
+        @media all and (min-width:767px) {
+        justify-content: flex-end;
+        }
+    }
+}
+.member-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    border: solid 5px lightgray;
+    margin: auto;
+    @media all and (min-width:767px) {
+        width: 205px;
+        height: 205px;
+        }
+    @media all and (min-width:1200px) {
+        width: 278px;
+        height: 278px;
+        }
+}
+.photo-member {
+    width: 100%;
+    display: block;
+    @media all and (min-width:1200px) {
+        max-height: 278px;
+        max-width: 278px;
+    } 
+}
+.member {
+    @media all and (min-width:767px) {
+        display: flex;
+    }
+}
+.member-reverse {
+    @media all and (min-width:767px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.member {
+        .text {
+            @media all and (min-width:767px) {
+            text-align: left;
+            line-height: $lineHeightGeneral;
+            }
+            @media all and (min-width:1200px) {
+            padding-right: 15vw;
+            }
+
+        }
+}
+.member-reverse {
+    .text {
+        @media all and (min-width:767px) {
+        text-align: right;
+        line-height: $lineHeightGeneral;
+        }
+        @media all and (min-width:1200px) {
+        padding-left: 15vw;
+        }
+    }
+}
+.main-column {
+    @media all and (min-width:767px) {
+        max-width: $centerColumnTablet;
+        margin: auto;
+    }
+    @media all and (min-width:1200px) {
+        max-width: $centerColumnDesktop;
+    }
+
+}
