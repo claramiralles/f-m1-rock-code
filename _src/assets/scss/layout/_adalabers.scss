@@ -25,7 +25,7 @@
     padding-top: 15px;
     padding-bottom: 45px;
 }
-p {
+.text {
     text-align: center;
     color: $rockGrey;
     line-height: $lineHeightGeneral;
@@ -114,7 +114,7 @@ p {
     }
 }
 .member {
-        p {
+        .text {
             @media all and (min-width:767px) {
             text-align: left;
             line-height: $lineHeightGeneral;
@@ -126,7 +126,7 @@ p {
         }
 }
 .member-reverse {
-    p {
+    .text {
         @media all and (min-width:767px) {
         text-align: right;
         line-height: $lineHeightGeneral;
