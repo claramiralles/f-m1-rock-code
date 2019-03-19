@@ -21,7 +21,7 @@ aside {
     margin: auto;
     @media all and (min-width:767px) {
             width: 90%;
-            max-width: 678px;
+            max-width: $centerColumnTablet;
             margin: auto;
         }
     @media all and (min-width:1200px) { 
