@@ -53,10 +53,10 @@
                 <form class="form" action="https://formspree.io/clara.miralles.imperial@gmail.com"
                 method="POST">
                     <div class="form__item">
-                        <label class="form__label" for="completeName">Nombre completo <span class="form__label--asterisk">*</span>
+                        <label class="form__label" for="completeName">Complete name <span class="form__label--asterisk">*</span>
 
                             <input class="form__input"
-                            id="completeName" name="completeName" type="text" placeholder="Nombre..."
+                            id="completeName" name="completeName" type="text" placeholder="Name..."
                             required>
                         </label>
                     </div>
@@ -69,44 +69,47 @@
                         </label>
                     </div>
                     <div class="form__item form__item--telephone">
-                        <label class="form__label" for="telephone">Teléfono
+                        <label class="form__label" for="telephone">Telephone
                             <input class="form__input form__input--telephone" id="telephone"
                             name="telephone" type="tel" placeholder="Ej. 690000000">
                         </label>
                     </div>
                     <div class="form__item">
-                        <label class="form__label" for="message">Mensaje <span class="form__label--asterisk">*</span>
+                        <label class="form__label" for="message">Message <span class="form__label--asterisk">*</span>
 
                             <textarea class="form__input form__text"
-                            id="message" name="message" cols="30" rows="10" placeholder="¿Qué necesita?"></textarea>
+                            id="message" name="message" cols="30" rows="10" placeholder="What do you need?"></textarea>
                         </label>
                     </div>
                     <div class="button__container">
-                        <input class="button" type="submit" value="Enviar">
+                        <input class="button" type="submit" value="Submit">
                     </div>
                 </form>
             </div>
         </main>
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="container">
-                <div class="copyright__container">
+            <div class="grid">
+                <!-- GRID ITEM 1 -->
+                <div class="grid__item grid__item--copy">
                     <p class="copyright">ROCK & CODE © 2019</p>
                 </div>
-                <div class="menu__footer">
+                <!-- GRID ITEM 2 -->
+                <div class="grid__item grid__item--nav">
                     <ul class="list__container">
-                        <li> <a href="index.html#team" class="list__item">Equipo</a>
+                        <li class="list__item"> <a href="index.html#team" class="link">Team</a>
 
                         </li>
-                        <li> <a href="index.html#aboutus" class="list__item">Quiénes somos</a>
+                        <li class="list__item"> <a href="index.html#aboutus" class="link">About us</a>
 
                         </li>
-                        <li> <a href="contact.html" class="list__item">Contácto</a>
+                        <li class="list__item"> <a href="contact.html" class="link">Contact</a>
 
                         </li>
                     </ul>
                 </div>
-                <div class="image__container"> <a href="https://adalab.es/" target="_blank" class="image__link">
+                <!-- GRID ITEM 3 -->
+                <div class="grid__item grid__item--logo"> <a href="https://adalab.es/" target="_blank" class="image__link">
                 <img src="assets/images/logo-adalab.png" alt="logo-adalab" class="image">
             </a>
 

@@ -24,7 +24,7 @@
         justify-content: space-between;
         align-items: center;
     } 
-    @media all and (min-width:1200px)  {
+    @media all and (min-width:1200px){
         max-width: $centerColumnDesktop;
     }
 }
@@ -37,7 +37,7 @@
         font-size: 16px;  
         display:flex;
         text-align: center;
-        @media all and (min-width:768px) {
+        @media all and (min-width:768px){
             margin-left: 0;
         }   
     }
@@ -52,7 +52,7 @@
     background-color: #14d9c4;
     justify-content: space-around;
     align-items: center;
-    @media all and (min-width:767px)  {
+    @media all and (min-width:767px){
         background-color: $greenButterfly;
         margin: auto;
     }
@@ -69,15 +69,9 @@
     &:hover{
         color: rgb(71, 71, 71);
     }
-    @media all and (min-width:767px)  {
-<<<<<<< HEAD
+    @media all and (min-width:767px){
         .menu &{
             margin-left: 20px;
-=======
-        margin: 0 10px 0 10px;
-        &:last-child {
-            margin-right: 0;
->>>>>>> grid-footer-irene
         }
     }
     
