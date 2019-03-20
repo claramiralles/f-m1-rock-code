@@ -1,8 +1,10 @@
 #aboutus{
+    width: 90%;
     position: absolute;
     top: -80px;
     @media all and (min-width: 767px){
         top: -50px;
+        width: 0;
     }
 }
 .adalabers {
