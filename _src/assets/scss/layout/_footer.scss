@@ -1,3 +1,6 @@
+* {
+    border: blue 1px solid;
+}
 .footer {
     border-top: 1px solid #b8b8b9;
         @media all and (min-width:768px) {
@@ -9,16 +12,22 @@
     display: flex;
     flex-direction: column;
     @media all and (min-width:768px) {
-        margin: auto;
-        width: 100%;
-        max-width: $centerColumnTablet;
-        justify-content: space-between;
-        align-content: space-between;
-        flex-wrap: nowrap;
+        // margin: auto;
+        // width: 100%;
+        // // max-width: $centerColumnTablet;
+        // justify-content: space-between;
+        // align-content: space-between;
+        // flex-wrap: nowrap;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 65px 90px 45px;
+        // grid-template-areas:'copy''logo''menu';
+
     }
-    @media all and (min-width:1200px) {
-        max-width: $centerColumnDesktop;
-    }
+    // @media all and (min-width:1200px) {
+        // max-width: $centerColumnDesktop;
+    // }
 }
 
 .copyright__container{
@@ -29,17 +38,17 @@
     padding-bottom: 20px;
     padding-top: 40px;
     @media all and (min-width:768px) {
-        width: 35%;
-        transform: translateY(30px);
-        display: flex;
-        align-items: center;
-        font-size: 15px;
-        padding-bottom: 0;
-        padding-top: 0;
+        // width: 35%;
+        // transform: translateY(30px);
+        // display: flex;
+        // align-items: center;
+        // font-size: 15px;
+        // padding-bottom: 0;
+        // padding-top: 0;
     }
-    @media all and (min-width:1200px) {
-        font-size: 14px;        
-    }
+    // @media all and (min-width:1200px) {
+        // font-size: 14px;        
+    // }
     .copyright {
         color: $greyCloud;
     } 
@@ -48,9 +57,9 @@
 .image__container{
     text-align: center;
     @media all and (min-width:768px) {
-        transform: translateY(-60px);
-        display: flex;
-        align-items: center;
+        // transform: translateY(-60px);
+        // display: flex;
+        // align-items: center;
     }
     .image {
         width: 115.9px;
@@ -67,10 +76,9 @@
     display: block;
     text-align: center;
     @media all and (min-width:768px) {
-
-        display: flex;
-        align-self: flex-end;
-        justify-content: flex-end;
+        // display: flex;
+        // align-self: flex-end;
+        // justify-content: flex-end;
         }
 }
 
