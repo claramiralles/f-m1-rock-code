@@ -1,0 +1,15 @@
+.contact{
+    width: 90%;
+    margin: auto;
+    @media all and (min-width:767px) {
+            max-width: 442px;
+            margin: auto;
+        }
+    @media all and (min-width:1200px) { 
+            max-width: 601px;
+        }
+}
+
+.title {
+    color: $greenButterfly;
+}

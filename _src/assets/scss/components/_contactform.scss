@@ -22,7 +22,7 @@
     display: block;
     font-family: $fontFamily;
     font-size: 14px;
-    color:  $greyCloud;
+    color: $rockGrey;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -54,7 +54,7 @@
 .form__item--telephone {
     @media all and (min-width:1200px){
         display: inline-block;
-        margin-left: 40px;
+        padding-left: 39px;
 }
 }
 .form__item--email {
@@ -79,6 +79,10 @@
     text-decoration: none;
     cursor: pointer;
     margin: 20px 0px 60px 0px;
+    transition: background-color ease 0.8s;
+    &:hover{
+        background-color: #14d9c4;
+    }
     @media all and (min-width:768px)
     {
         width: 206px;
