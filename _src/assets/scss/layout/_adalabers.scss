@@ -1,13 +1,12 @@
 #aboutus{
-    width: 90%;
     position: absolute;
     top: -80px;
     @media all and (min-width: 767px){
         top: -50px;
-        width: 0;
     }
 }
 .adalabers {
+    width: 90%;
     position: relative;
     margin: auto;
 }
@@ -41,7 +40,7 @@
 }
 .member-content {
     @media all and (min-width:767px) {
-    width: 60%;
+    width: 75%;
     }
     @media all and (min-width:1200px) {
             margin-bottom: 20px;
@@ -54,6 +53,9 @@
         }
     }
     .member-content {
+        @media all and (min-width:767px) {
+            padding-left: 31px;
+        }    
         @media all and (min-width:1200px) {
             flex-grow: 1;
             padding-left: 45px;
@@ -66,12 +68,16 @@
             text-align: right;
         }
     }
-    @media all and (min-width:1200px) {
-        .member-content {
+    .member-content {
+        @media all and (min-width:767px) {
+            padding-right: 31px;
+        }   
+        @media all and (min-width:1200px) {
             flex-grow: 1;
             padding-right: 45px;
         }
     }
+
 
 }
 .member {
@@ -97,6 +103,7 @@
     @media all and (min-width:767px) {
         width: 205px;
         height: 205px;
+        margin: 0;
         }
     @media all and (min-width:1200px) {
         width: 278px;
