@@ -7,7 +7,6 @@
 }
 .adalabers {
     position: relative;
-    width: 90%;
     margin: auto;
 }
 .adalabers-color {
@@ -101,8 +100,15 @@
         width: 278px;
         height: 278px;
         margin-bottom: 20px;
-        }
+    }
 }
+
+.member:last-child .member-image {
+    @media all and (min-width:1200px) {
+        margin-bottom: 60px;
+    }
+}
+
 .photo-member {
     width: 100%;
     display: block;

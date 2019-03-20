@@ -36,7 +36,10 @@
     .teamname {
         font-size: 16px;  
         display:flex;
-        text-align: center;   
+        text-align: center;
+        @media all and (min-width:768px) {
+            margin-left: 0;
+        }   
     }
 }
    
@@ -67,8 +70,15 @@
         color: rgb(71, 71, 71);
     }
     @media all and (min-width:767px)  {
+<<<<<<< HEAD
         .menu &{
             margin-left: 20px;
+=======
+        margin: 0 10px 0 10px;
+        &:last-child {
+            margin-right: 0;
+>>>>>>> grid-footer-irene
         }
     }
+    
 }
